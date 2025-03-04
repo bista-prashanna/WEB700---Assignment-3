@@ -4,103 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Demo - WEB700</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        body { 
-            font-family: 'Arial', sans-serif; 
-            background-color: #f4f7fa; 
-            color: #333; 
-            margin: 0; 
-            padding: 0;
-        }
-        nav { 
-            background: #007bff; 
-            padding: 15px; 
-            text-align: center;
-        }
-        nav a { 
-            color: white; 
-            margin: 15px; 
-            text-decoration: none; 
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            text-decoration: underline;
-            color: #ffcc00; 
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 40px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: left;
-        }
-        h1, h2 {
-            color: #007bff;
-            font-size: 36px;
-            margin-top: 20px;
-        }
-        h3 {
-            font-size: 28px;
-            margin-top: 15px;
-            color: #007bff;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 14px;
-            color: #777;
-            padding: 20px 0;
-            background: #f1f1f1;
-            border-top: 1px solid #ddd;
-        }
-        .footer p {
-            margin: 10px 0;
-        }
-        .content-section {
-            margin-bottom: 40px;
-        }
-        .highlight {
-            color: #00509e;
-            font-weight: bold;
-        }
-        .table-section table, .list-section ul {
-            width: 100%;
-            margin-bottom: 30px;
-        }
-        .table-section th, .table-section td {
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        .table-section caption {
-            font-size: 24px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .list-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .list-section ul li {
-            margin: 10px 0;
-        }
-        .list-section ul li a {
-            color: #007bff;
-            font-weight: bold;
-        }
-        .list-section ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/theme.css"> <!-- Link to your theme.css -->
 </head>
 <body>
 
@@ -111,15 +15,12 @@
         <a href="/students">Students</a>
         <a href="/tas">Teaching Assistants</a>
         <a href="/courses">Courses</a>
-        <a href="/asdf">Assignments</a>
+        <a href="/students/add">Add Student</a>
     </nav>
 
-    <!-- Main Content Area -->
     <div class="container">
         <h1>HTML Demo - Explore HTML Elements</h1>
         <p>This page serves as a playground for experimenting with various HTML elements. Dive into sections on tables, lists, images, audio, and video!</p>
-
-        <!-- Tables Section -->
         <div class="content-section table-section">
             <h2>Tables - HTML and CSS</h2>
             <p>Tables are a great way to organize data. In the example below, we’ll show how to create a responsive table with HTML and style it with CSS:</p>
@@ -148,6 +49,16 @@
                         <td>Defines a hyperlink.</td>
                         <td>Used to create links to other pages or resources.</td>
                     </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Defines a paragraph.</td>
+                        <td>Used to group sentences and sections of text.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Defines an image.</td>
+                        <td>Used to embed images in a document.</td>
+                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>
@@ -157,64 +68,57 @@
             </table>
             <p>Notice how we used the <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> tags to create a clear and structured table layout for our HTML elements.</p>
         </div>
-
-        <!-- Lists Section -->
+        
         <div class="content-section list-section">
             <h2>HTML Lists - A Breakdown</h2>
             <p>Explore different types of lists in HTML. The following sections demonstrate ordered lists, unordered lists, and nested lists. These are often used in documentation, FAQs, and navigation menus:</p>
             
-            <!-- Ordered List -->
             <h3>Ordered List: HTML Elements</h3>
             <ol>
-                <li>&lt;div&gt;</li>
-                <li>&lt;p&gt;</li>
-                <li>&lt;h1&gt; to &lt;h6&gt;</li>
-                <li>&lt;a&gt;</li>
+                <li>&lt;div&gt; - Defines a division or section in a document.</li>
+                <li>&lt;p&gt; - Defines a paragraph.</li>
+                <li>&lt;h1&gt; to &lt;h6&gt; - Defines HTML headings.</li>
+                <li>&lt;a&gt; - Defines a hyperlink.</li>
             </ol>
             <p>This ordered list shows some common HTML tags in the order of their importance when building a web page.</p>
             
-            <!-- Unordered List -->
             <h3>Unordered List: CSS Properties</h3>
             <ul>
-                <li>background-color</li>
-                <li>font-size</li>
-                <li>padding</li>
-                <li>margin</li>
+                <li>background-color - Sets the background color of an element.</li>
+                <li>font-size - Sets the size of the font.</li>
+                <li>padding - Sets the space between the content and the border of an element.</li>
+                <li>margin - Sets the space outside an element.</li>
             </ul>
             <p>Here’s an unordered list of some fundamental CSS properties that help style HTML elements.</p>
             
-            <!-- Nested List -->
             <h3>Nested List: JavaScript Methods</h3>
             <ol>
                 <li>Array Methods
                     <ul>
-                        <li>push()</li>
-                        <li>pop()</li>
-                        <li>shift()</li>
+                        <li>push() - Adds one or more elements to the end of an array.</li>
+                        <li>pop() - Removes the last element from an array.</li>
+                        <li>shift() - Removes the first element from an array.</li>
                     </ul>
                 </li>
+                <br>
                 <li>String Methods
                     <ul>
-                        <li>toUpperCase()</li>
-                        <li>toLowerCase()</li>
-                        <li>charAt()</li>
+                        <li>toUpperCase() - Converts a string to uppercase letters.</li>
+                        <li>toLowerCase() - Converts a string to lowercase letters.</li>
+                        <li>charAt() - Returns the character at a specified index in a string.</li>
                     </ul>
                 </li>
             </ol>
             <p>This nested list showcases JavaScript methods for arrays and strings, each with examples of commonly used functions.</p>
-        </div>
+            <div class="content-section image-section">
+                <h2>Images</h2>
+                <p>Here are a few sample images:</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Tuscan_Landscape_6.JPG" alt="Nature Landscape" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg" alt="Sunset" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg" alt="Mountain Peak" />
+                <p>These images are included using the <code>img</code> tag and demonstrate the importance of providing descriptive <code>alt</code> text for accessibility.</p>
+            </div>
 
-        <!-- Images Section -->
-        <div class="content-section">
-            <h2>Images</h2>
-            <p>Here are a few sample images:</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in Halfpipe" class="img-fluid" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Cat_sitting_on_park_bench.jpg" alt="Cat on a Park Bench" class="img-fluid" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Mountains.jpg" alt="Mountain Landscape" class="img-fluid" />
-            <p>These images are included using the <code>img</code> tag and demonstrate the importance of providing descriptive <code>alt</code> text for accessibility.</p>
-        </div>
-
-        <!-- Audio Section -->
         <div class="content-section">
             <h2>Audio</h2>
             <p>Listen to this sample audio:</p>
@@ -225,23 +129,20 @@
             <p>This section introduces the use of the <code>audio</code> element for embedding audio on a webpage.</p>
         </div>
 
-        <!-- Video Section -->
-        <div class="content-section">
-            <h2>Video</h2>
-            <p>Watch this sample video:</p>
-            <video width="100%" controls>
-                <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <p>Here, we demonstrate embedding a video file using the <code>video</code> tag for better multimedia presentation.</p>
+            <div class="content-section">
+                <h2>Video</h2>
+                <p>Watch this sample video:</p>
+                <video width="100%" controls>
+                    <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4" />
+                    Your browser does not support the video element.
+                </video>
+                <p>This section introduces the use of the <code>video</code> element for embedding video on a webpage.</p>
+            </div>
         </div>
-
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2025 Prashanna Bista | All Rights Reserved</p>
-    </div>
-
-</body>
-</html>
+    
+        <footer>
+            <p>&copy; 2025 HTML Demo | Explore HTML Elements</p>
+        </footer>
+        
+    </body>
+    </html>
